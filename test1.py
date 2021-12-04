@@ -118,3 +118,43 @@ for student in students:
     total += age
 
 print(total)
+
+
+# Find the minium algorithm
+
+ages = [ 62,34,21,78,23,88,20, 65,32, 17, 94, 17, 16, 65,21,89
+]
+min = ages[0]
+for num in ages:
+    if num < min:
+        min = num 
+print(f"the youngest person's age is {min}")
+
+from mock_data import catalog
+def get_unique_categories():
+    print("-" * 30)
+
+    categories = []
+    for prod in catalog:
+        if prod["category"] not in categories:
+            categories.append(prod["category"])
+    
+    print(categories)
+
+
+        #print(prod["category"])
+
+get_unique_categories()
+
+
+colors = ["red", "blue", "orange", "orange", "Blue", "Green", "Red", "blue", "Black", "gray", "GrAY", "oRanGE"]
+def get_unique_colors():
+    print("*" * 30 )
+    result = []
+    for uColor in colors:
+        if uColor.lower() not in result:
+            result.append(uColor.lower())
+    print(result)
+              
+
+get_unique_colors()
